@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>DAN</title>
+
+</head>
+
+<body>
+  <header class="navbar-container">
+    <div class="logo">
+      <img src="assets/img/DAN.png" style="width: 100px" height="30px" alt="logo dandy">
+    </div>
+    <nav class="nav-list">
+      <ul>
+        <li><a href="#text">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#sertifikat">SERTIFIKAT</a></li>
+        <li><a href="#portofolio">PORTOFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container">
+    <div class="content">
+      <div class="content-description">
+        <div id="text"></div><br><br>
+        <button class="button">CONTACT</button><br><br>
+        <button class="button">CV</button>
+      </div>
+      <div class="content-image">
+        <img src="assets/img/gambar3d.png" alt="gambar 3d">
+      </div>
+    </div>
+  </div>
+  <article id="about" style="padding: 3rem">
+    <h2 class="my-3">ABOUT</h2>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="about-text">
+          <p>
+            Saya adalah seorang pengembang Web Developer dengan menciptakan pengalaman web yang menakjubkan dan
+            fungsional. Dalam perjalanan saya sebagai pengembang web, saya telah mengerjakan berbagai proyek yang
+            berhasil dan memberikan solusi yang efektif bagi klien saya.
+          </p>
+          <p>
+            Portofolio saya mencakup berbagai jenis proyek, mulai dari situs web perusahaan hingga toko online dan
+            aplikasi web. Saya menggabungkan keahlian dalam HTML, CSS, JavaScript, dan kerangka kerja modern untuk
+            menciptakan tampilan yang menarik dan pengalaman pengguna yang responsif.
+          </p>
+        </div>
+      </div>
+      <aside>
+      <div class="about-img">
+        <img src="assets/img/about 1.png" style="width: 20rem;" class="img-fluid" />
+      </div>
+    </aside>
+    </div>
+  </article>
+  <section id="sertifikat" style="padding-top: 3rem;">
+    <div class="section-header text align-center" style="margin-bottom: 150px;">
+      <h2 class="text-center">SERTIFIKAT</h2>
+    </div>
+      <div class="grid-container">
+        <div><img src="assets/img/50cdedb0-2c89-4f93-aa30-3c9d228b7d58 (1)_page-0001 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+        <div><img src="assets/img/Dandy Wahyudin_page-0001 (1) 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+        <div><img src="assets/img/sertifikat_course_261_1112439_050623213017_page-0001 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+        <div><img src="assets/img/Sertifikat_DANDY WAHYUDIN_Junior Web Developer_page-0001 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+        <div><img src="assets/img/IT SUPPORT GOOGLE_page-0001 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+        <div><img src="assets/img/Frame 1.png" style="transform: rotate(270deg)" width="200px" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <article id="portofolio">
+    <h2>PORTOFOLIO</h2>
+    <aside class="container">
+      <img src="assets/img/portofolio.png" alt="">
+    </aside>
+  </article>
+  <section id="contact">
+    <div class="flex-container">
+      <h2>CONTACT ME : </h2>
+      <div><a href="https://wa.me/+62896901370"><img src="assets/img/whatsapp.png" alt=""><link rel="stylesheet" href=""></a></div>
+      <div><a href="https://instagram.com/dandywahyudinn"><img src="assets/img/instagram.png" alt=""></a></div>
+      <div><a href="https://www.linkedin.com/in/dandywahyudin/"><img src="assets/img/linkedin-logo.png" alt=""></a></div>
+      <div><a href="https://github.com/Dandywahyudin"><img src="assets/img/github-sign.png" alt=""></a></div>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <nav class="container-footer">
+      <h5>2023 copyright.DandyWahyudin</h5>
+    </nav>
+  </footer>
+
+  <script>
+    let i=0,text;
+    text = "Hi, I'm Dandy Wahyudin";
+
+    function ketik() {
+      if (i<text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+      } else {
+        i = 0;
+        document.getElementById("text").innerHTML = "";
+      }
+    }
+    setInterval(ketik,200);
+  </script>
+</body>
+
+</html>
